@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Application</title>
+    <style>
+        #main-product-image{
+           width:300px;
+           height: 300px;
+           object-fit:cover;
+           border: 1px solid black;
+           border-radius:0px;
+           box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+           margin: 40px auto;
+           display: block;
+
+        }
+        .product-image{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+
+        }
+        .product-imgs-container{
+         display:flex;
+    
+
+        }
+    </style>
+</head>
+<body>
+    <img src="1.png" id="main-product-image"/>
+    <div class="product-imgs-container">
+        <img src="1.png" class="product-image" onclick="changeImage(1)"/>
+        <img src="2.png" class="product-image" onclick="changeImage(2)"/>
+        <img src="3.png" class="product-image" onclick="changeImage(3)"/>
+        <img src="4.png" class="product-image" onclick="changeImage(4)"/>
+        <img src="5.png" class="product-image" onclick="changeImage(5)"/>
+        <img src="6.png" class="product-image" onclick="changeImage(6)"/>
+        <img src="7.png" class="product-image" onclick="changeImage(7)"/>
+
+
+</div>
+<script>
+    function changeImage(num){
+        const mainImage = document.getElementById('main-product-image');
+        if(num==1){
+            mainImage.src = "1.png";
+        }else if(num==2){
+            mainImage.src = "2.png";
+        }else if(num==3){
+            mainImage.src = "3.png";
+        }else if(num==4){
+            mainImage.src = "4.png";
+        }else if(num==5){
+            mainImage.src = "5.png";
+        }else if(num==6){
+            mainImage.src = "6.png";
+        }else if(num==7){
+            mainImage.src = "7.png";
+        }
+}
+</script>
+</body>
+</html>
